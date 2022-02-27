@@ -1,0 +1,221 @@
+*{
+    padding:0;
+    margin: 0;
+    border:0;
+}
+body{
+    color:#000;
+    font-family:'Times New Roman', Times, serif;
+}
+header {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(110, 106, 106, 0.459);
+    max-width: 1200px;
+}
+.logo{
+    width: 22%;
+}
+.logo img{
+    width: 100%;
+}
+.nav{
+    padding: 10px;
+    width: 78%;
+}
+.dropbtn {
+    border: none;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+
+  }
+  .dropbtn:hover{
+    color:#0B249E;
+    cursor: pointer;
+  } 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    background-color: #fff;
+    width: 200px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid;
+  }
+  .dropdown-content a:hover {color:#0B249E;}
+
+.dropdown:hover .dropdown-content {display: block;}
+.banner img{
+    width: 100%;
+}
+.review{
+  padding: 60px 0;
+  max-width: 1200px;
+  margin: auto;
+}
+.header-review{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.header-review-content{
+  color: #3e3d3d;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 49px;
+}
+.p-review-content{
+  color:#000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height:29px;
+}
+.review_content-box img{
+  width: 100%;
+  margin-bottom:15px;
+}
+.review_content{
+  width: 33.33%;
+  padding: 0 20px;
+}
+.review_content-box {
+  padding: 5%;
+  border: 1px solid #7a7a7a7a;
+  margin:0 10px;
+}
+.review_content-p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
+}
+.review_contents {
+  display: flex;
+}
+.scholarship{
+  left: -31.6667px;
+  background-color: transparent;
+    background-image: linear-gradient(180deg, #000D75 0%, #65379A 100%);
+}
+.scholarship_contanier {
+  display: flex;
+  padding: 50px 50px;
+}
+.information-student {
+  width: 50%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scholarship-img {
+  width: 50%;
+}
+.scholarship-img img{
+  width: 100%;
+}
+input.inforyou {
+  padding: 9px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  width: 75%;
+} 
+.information-student-header{
+  font-size: 22px;
+  font-weight: 700;
+  color:#fff;
+  line-height:31px;
+  margin-bottom: 15px;
+}
+.money_scholarship{
+  color: #f5ec10;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  border-width: 2px;
+  padding: 2% 5%;
+  border-style: solid;
+  margin-bottom: 25px;
+}
+textarea#forminator-field-textarea-1 {
+  width: 75%;
+  padding: 9px;
+}
+.nav-responsive{
+  display: none;
+}
+@media (max-width:770px){
+  .review_contents{
+    flex-wrap: wrap;
+  }
+  .review_content{
+    width: 100%;
+  }
+  .logo {
+    width: 50%;
+  }
+  .nav{
+    display: none;
+  }
+  i.bi.bi-text-center {
+    font-size: 35px;
+  }
+  .nav-responsive {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  }
+  .header-review-content{
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+  }
+  .p-review-content{
+    font-size: 14px;
+    text-align: center;
+    line-height: 25px;
+
+  }
+  
+}
+@media (max-width:440px){
+  .scholarship_contanier{
+    flex-direction: column;
+    padding:  50px 20px;
+
+  }
+  .information-student{
+    width: 100%;
+  }
+  .scholarship-img{
+    width: 100%;
+  }
+  .information-student-header{
+    text-align: center;
+  }
+  input.inforyou{
+    width: 90%;
+  }
+  textarea#forminator-field-textarea-1{
+    width: 90%;
+  }
+}
